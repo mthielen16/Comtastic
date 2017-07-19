@@ -1,0 +1,2 @@
+class Playerdat < ApplicationRecord
+end
