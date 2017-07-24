@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/HappyGrapher.iml" filepath="$PROJECT_DIR$/.idea/HappyGrapher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/comtistic.iml" filepath="$PROJECT_DIR$/.idea/comtistic.iml" />
     </modules>
   </component>
 </project>

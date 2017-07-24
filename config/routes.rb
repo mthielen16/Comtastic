@@ -2,16 +2,18 @@ Rails.application.routes.draw do
 
 
 
-  resources :charts, only: [] do
-    collection do
-      get 'sporters_by_age'
-      get 'sporters_by_country'
-      get 'results_by_country'
-      get 'competitions_by_year'
-      get 'testing'
-    end
-  end
+  #resources :charts, only: [] do
+    #collection do
+     # get 'testing'
+      #get 'home'
+      #get 'index'
 
-  root 'statistics#index'
+     # end
+  #end
+
+  root 'statistics#home'
+
+  #get 'home' => 'statistics#home', as: 'home'
+  get 'show' => 'statistics#show'
 
 end
