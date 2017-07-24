@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Spielersuche</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Titel</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all',
+                             'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'http://code.highcharts.com/highcharts.js', "chartkick" %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'http://code.highcharts.com/highcharts.js', "chartkick" %>
-
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+  <![endif]-->
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <nav>
+      <%= link_to "Home", '#', id: "logo" %>
+      <ul class="nav navbar-nav navbar-right">
+        <li>  <%= form_tag(show_path, method: "get",class: "foo") do %>
+              <%= text_field_tag :search, params[:search], placeholder: 'Spielername...' %>
+              <%= submit_tag 'Suche' %>
+          <% end %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <%= yield %>
+</div>
+</body>
 </html>
+
+
+
