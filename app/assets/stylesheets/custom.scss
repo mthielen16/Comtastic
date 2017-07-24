@@ -40,7 +40,7 @@ h2 {
   font-size: 1.8em;
   letter-spacing: -1px;
   margin-bottom: 15px;
-  text-align: left;
+  text-align: center;
   font-weight: normal;
   color: #777;
 }
@@ -68,8 +68,22 @@ p {
   text-decoration: none;
 }
 
-.foo
-{
-  padding-top: 9px;
-  padding-left: 20px;
+
+
+
+/* table */
+
+
+
+#wrapper {
+  overflow: hidden; /* will contain if #first is longer than #second */
+  margin-top:20px
+}
+#first {
+  width: 35%;
+  float:left; /* add this */
+  margin-top:0px
+}
+#second {
+  overflow: hidden; /* if you don't want #second to wrap below #first */
 }

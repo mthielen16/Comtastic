@@ -16,56 +16,5 @@ module StatisticsHelper
                library: {lineTension: 0, pointRadius: 0}
   end
 
-  def torwart
-      values = []
-      @Colnames.each do |col|
-          values.push @Torwart.sum(col)
-      end
-      @result = @date_array.zip(values.cycle).to_h
-
-      area_chart @result, width: "600px",
-                colors: ["#ffcc00"]
-
-
-  end
-  def abwehr
-    values = []
-    @Colnames.each do |col|
-      values.push @Abwehr.sum(col)
-    end
-    @result = @date_array.zip(values.cycle).to_h
-
-    area_chart @result, width: "600px",
-               colors: ["#cc3300"],
-               library: {lineTension: 0, pointRadius: 0}
-  end
-
-  def mittelfeld
-    values = []
-    @Colnames.each do |col|
-      values.push @Mittelfeld.sum(col)
-    end
-    @result = @date_array.zip(values.cycle).to_h
-
-    area_chart @result, width: "600px",
-               colors: ["#ff6600"],
-               library: {lineTension: 0, pointRadius: 0}
-  end
-
-  def stürmer
-    values = []
-    @Colnames.each do |col|
-      values.push @Stürmer.sum(col)
-    end
-    @result = @date_array.zip(values.cycle).to_h
-
-    area_chart @result, width: "600px",
-               colors: ["#00cc00"],
-               library: {lineTension: 0, pointRadius: 0}
-  end
-
-
-
-
 
 end

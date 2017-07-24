@@ -1,23 +1,22 @@
 
 <h2>Comunio Marktwerte</h2>
+<%= high_chart_globals(@chart_globals) %>
+
 
 
 
 <table style="width:100%">
-
   <tr>
-    <td><%= torwart %></td>
-    <td><%= abwehr %></td>
+    <td><%= high_chart("TWtotal", @tw_total) %></td>
+    <td><%= high_chart("AW_total", @aw_total) %></td>
   </tr>
   <tr>
-    <td><%= mittelfeld %></td>
-    <td><%= stürmer %></td>
+    <td><%= high_chart("MF_total", @mf_total) %></td>
+    <td><%= high_chart("ST_total", @st_total) %></td>
   </tr>
-
 </table>
 
-<%= area_chart  Playerdat.find_by(name: "Esser").attributes %>
-
+  <%= high_chart("Marktwert_total", @marktwert_total) %>
 
 
 

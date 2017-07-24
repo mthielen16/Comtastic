@@ -1,6 +1,63 @@
-
+<html lang="en">
+<head>
+  <title><%="Marktwert  #{@Spielername}" %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
 
 <h2><%="Marktwert  #{@Spielername}" %></h2>
+<%= high_chart_globals(@chart_globals) %>
+<div id="wrapper">
+  <div id="first">
+    <table class="table" align="left" style="width:100%">
 
-<%= player %>
+      <tbody>
+      <tr style="background-color:#c2c2d6">
+        <td>Name</td>
+        <td><%= @spielerdata[2] %></td>
+      </tr>
+      <tr>
+        <td>Position</td>
+        <td><%= @spielerdata[3] %></td>
+      </tr>
+      <tr>
+        <td>Verein</td>
+        <td><%= @spielerdata[4] %></td>
+      </tr>
+      <tr>
+        <td>Punkte 2016/2017</td>
+        <td><%= @spielerdata[5] %></td>
+      </tr>
+      <tr>
+        <td>Einsätze</td>
+        <td><%= (@spielerdata[5]/@spielerdata[6]).to_i %></td>
+      </tr>
+      <tr>
+        <td>Punkte pro Spiel</td>
+        <td><%= @spielerdata[6].round(1)%></td>
+      </tr>
+      <tr>
+        <td>Punkte pro Millionen</td>
+        <td><%= (@spielerdata[5]/(@spielerdata[-1]/1000000).to_f).round(1)%></td>
+      </tr>
 
+
+      </tbody>
+    </table>
+
+
+
+
+  </div>
+  <div id="second">
+    <table  align="right" style="width:100%">
+      <tr>
+        <td><%= high_chart("TWtotal", @spieler_mw) %></td>
+      </tr>
+    </table>
+  </div>
+</div>

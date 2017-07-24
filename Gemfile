@@ -12,6 +12,7 @@ gem 'chartkick'
 gem "highcharts-rails"
 gem 'hightop'
 gem 'groupdate'
+gem 'lazy_high_charts'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'

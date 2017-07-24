@@ -151,11 +151,13 @@
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.18, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.0, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="groupdate (v3.2.0, ruby-2.4.1-p111) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hash-deep-merge (v0.1.1, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="highcharts-rails (v5.0.7, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hightop (v0.2.0, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.6, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n_data (v0.7.0, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.7.0, ruby-2.4.1-p111) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lazy_high_charts (v1.5.8, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, ruby-2.4.1-p111) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.6, ruby-2.4.1-p111) [gem]" level="application" />
