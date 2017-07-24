@@ -24,8 +24,8 @@ module StatisticsHelper
       @result = @date_array.zip(values.cycle).to_h
 
       area_chart @result, width: "600px",
-                colors: ["#ffcc00"],
-                 title: {text: 'My custom title'}
+                colors: ["#ffcc00"]
+
 
   end
   def abwehr
