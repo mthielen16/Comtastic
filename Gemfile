@@ -13,6 +13,7 @@ gem "highcharts-rails"
 gem 'hightop'
 gem 'groupdate'
 gem 'lazy_high_charts'
+gem 'twitter-typeahead-rails', :git => "git://github.com/yourabi/twitter-typeahead-rails.git"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
